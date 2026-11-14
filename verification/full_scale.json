@@ -1,0 +1,71 @@
+{
+  "reproducible": true,
+  "runs": 2,
+  "manifest": {
+    "config": {
+      "employees": 5000,
+      "skills": 300,
+      "projects": 500,
+      "months": 12,
+      "seed": 20261022
+    },
+    "provenance": "Entirely synthetic; no external or personal data",
+    "sha256": {
+      "Allocation.csv": "244517f61ef7daa665a0eb508e71f3c7493c26ead20cf5060cccfd94fc0c5747",
+      "Allocation.json": "d4414eccf8db646f817543bb55c37b0b29f393367e846e342d87d55939a678f8",
+      "Availability.csv": "dc600cd65780a5a8e87f8185482940bb9d36505631956d301a34863f7ac5887c",
+      "Availability.json": "a97bdfe5695499785cef76f12473f7cb84d626ee238015581248e998755de3a2",
+      "DemandPlan.csv": "3a3728d97f6e9108a611ade8f3b4a1d157c34278ad823e2fb32aa40706a906aa",
+      "DemandPlan.json": "cefe8dc06caf99367cf0b41edbfa2877ece7beb199ccf7ec04b19f1f79364815",
+      "Employee.csv": "ef0f5c98ed71cd23413cd0f4833c5f281c3ee05bfeac6ceeeb4fa0f3dea70f62",
+      "Employee.json": "7d6aea3f81b599206a62c4b824ffd9cd6ee51615e516aa0ada8ef71f45cfbe98",
+      "EmployeeSkill.csv": "e94e7e63b03781109c69760828b4a448fa1880c2123b5f6d9338244bddf5139a",
+      "EmployeeSkill.json": "ec8b8408127800980297e7b3194aca387e964b7e51008ea47a448eb5cf4f939c",
+      "Event.csv": "016066911ca0bd676a56fe20f890d1ad04310831ddb2b99e660430928600cf2d",
+      "Event.json": "753b7c48cf1099ca8b2b0ee0a5e00c092c3310568f6d3273f6da29596f6956ba",
+      "findings.csv": "46b4ec9e46ec01fdcf6c9723437d13ce0c94d3e8b6ed658c757892ac7fe7d613",
+      "findings.json": "ef415d95e1081effceee2197af15c13736be0e25310c779b2978dd68cfb9fea2",
+      "GapAnalysis.csv": "d23ca63c6826400a354d2c635e3436a3a7097ea3efcce30e1afbdb995522f2df",
+      "GapAnalysis.json": "ac2436968b2d40f84ba70726181125535575f931cb29c5672f04e421479532d2",
+      "ground_truth.csv": "81ab3361d765a468b9b251701ad15186a3efc3e779025b60ec1f25086fe1f006",
+      "ground_truth.json": "10ef2ae79124796070f039a50ebed5d54c6de2fc5a54e2a0fb2d3a780a267e65",
+      "Project.csv": "21775ed57fbde0cc61afc8e30a1729fd5a2fdd5273893a9e4f2d8b365a819543",
+      "Project.json": "a1fb2c637c70769a5ba7bd1d4200cb203dec9b33ef2b1b8c1eb31327b66d9e98",
+      "Role.csv": "95ec6b8909613271a369dfc00e35f759227728d914bac530ca6eb9e3445339a5",
+      "Role.json": "b78a69b9eafd60166716812a16aa0c6e964249745ea2c9187e2b52f243d15150",
+      "seed.sql": "623171a6e0e16aaf1b8af8319ce74a04ac07a6507362bf68e12e6b61baf62e61",
+      "Skill.csv": "ac0d51c6d87cd93bd74c4d3dcc8c76347b987f98072fc26490b0470ea4157410",
+      "Skill.json": "94628ede91f33300c83ea9acf3b9ebb9f14d0b5035a996039d7be115dfcc0ed5",
+      "Training.csv": "1e3e317a53fb2107f1f120c27bab31f3b38d19b35fffe1bef273384551128d96",
+      "Training.json": "70f3a53559bf4d54c42230016958abe5e9dacc3af7c1b0e8cacf2ddd9777a88b",
+      "utilization.csv": "fed8f783256c4bd2c7df9eee58cdc7f9710525bfe344d186537df7f1e79470b2",
+      "utilization.json": "5537acf3cd3c827ec5a02423768fcd350ae272c7ce226b6609d462c84f742f58",
+      "validation_summary.json": "430bc2d45fa847d821c133b1c355198f7f84a082a1d882c14274c73d5846b957"
+    }
+  },
+  "summary": {
+    "errors": [],
+    "passed": true,
+    "known_anomaly_recall": 1.0,
+    "known_anomalies": 4,
+    "detected_exceptions": 7294,
+    "total_demand_hours": 1200320,
+    "total_gap_hours": 1197080,
+    "row_counts": {
+      "Role": 4,
+      "Skill": 300,
+      "Employee": 5000,
+      "EmployeeSkill": 30000,
+      "Project": 500,
+      "DemandPlan": 6001,
+      "Allocation": 18001,
+      "Availability": 60000,
+      "Training": 250,
+      "GapAnalysis": 6000,
+      "Event": 11751,
+      "ground_truth": 4,
+      "utilization": 60000,
+      "findings": 7294
+    }
+  }
+}
