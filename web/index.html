@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Workforce Compass · Workforce planning</title>
+  <meta name="description" content="Understand project demand, workforce capacity and skills gaps in a local, reproducible planning workspace.">
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">↗</span><span>workforce<span class="brand-sub">COMPASS</span></span></a>
+    <div class="workspace-label">PLANNING WORKSPACE <span>2026</span></div>
+    <nav aria-label="Main navigation">
+      <a href="#overview" data-page="overview"><span class="nav-icon">◫</span>Overview</a>
+      <a href="#demand" data-page="demand"><span class="nav-icon">▥</span>Demand & skill gaps</a>
+      <a href="#people" data-page="people"><span class="nav-icon">♧</span>People & capacity</a>
+      <a href="#exceptions" data-page="exceptions"><span class="nav-icon">⚑</span>Exceptions<span id="exception-count" class="nav-count"></span></a>
+      <div class="nav-divider"></div>
+      <a href="#guide" data-page="guide"><span class="nav-icon">◎</span>Understand the project</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="demo-label"><span class="dot"></span> LOCAL DEMO</div><p>Real planning logic.<br>Entirely synthetic people.</p><span class="seed-label">Fixed seed · 20261022</span></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Overview</strong></div><div class="top-actions"><span class="local-status"><span class="dot"></span> Running locally</span><span class="avatar" title="Planning workspace">WC</span></div></header>
+    <main>
+      <div class="page-heading"><div><div class="eyebrow">WORKFORCE INTELLIGENCE</div><h1 id="page-title">The right people. A clearer plan.</h1><p id="page-subtitle">Connect project demand to the skills and capacity you actually have.</p></div><a class="button secondary" id="export-link" href="/api/download?table=GapAnalysis">↓ Export gap analysis</a></div>
+      <section class="filters" aria-label="Planning filters"><label>Planning month<select id="period"></select></label><label>Project<select id="project"><option value="">All projects</option></select></label><label>Role<select id="role"><option value="">All roles</option></select></label><div class="filter-separator"></div><label>Dataset<select id="scale"><option value="starter">Starter · 100 people</option><option value="full">Full scale · 5,000 people</option></select></label><button class="text-button" id="reset">Reset filters ↺</button></section>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <div id="content" aria-live="polite"><div class="loading"><span class="spinner"></span> Preparing your planning workspace…</div></div>
+      <footer class="page-footer"><span>Workforce Compass <span class="footer-dot">·</span> Synthetic planning scenario for 2026</span><a href="#guide">How are these numbers calculated? ↗</a></footer>
+    </main>
+  </div>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div id="detail-body"></div></dialog>
+</body>
+</html>

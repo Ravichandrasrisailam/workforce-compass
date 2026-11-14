@@ -16,7 +16,7 @@ All fields below are required unless marked optional. IDs are immutable strings,
 
 ## Skill
 * skill_id: string PK; SKL-NNNNNN; unique.
-* name: string; Specialty NNN; unique generated label.
+* name: string; named skill (for example Python, SQL or UX Research); unique generated label. Full mode adds numbered synthetic specializations after the first 32 skills.
 * category: string enum Engineering, Analytics, Design, Delivery.
 * validity_days: integer days; 365; shared verification policy.
 
